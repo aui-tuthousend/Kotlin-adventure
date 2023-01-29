@@ -5,7 +5,7 @@ fun main() {
 
     val kelas: Array<Int?> = arrayOfNulls( 7 )
     kelas[0]=47
-    kelas[1]=-1
+    kelas[1]=-6
 
     //val range = 1..100
     val range = 120 downTo 1 step 2
