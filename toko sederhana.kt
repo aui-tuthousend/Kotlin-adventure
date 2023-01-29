@@ -12,10 +12,22 @@ fun menu () {
     println(" [5]. Correction Pen |(to draw on your school's table)|")
 }
 
+fun pricing (name: Array<String>, price: Array<Int>, item: Array<Int>, index: Int, i: Int ) {
+    var buffer: Int
+    println("\nYou Choose " + name[index-1])
+    println("the Price is " + price[index-1]+ "k")
+    print("How many items do u need : ")
+    val reader = Scanner(System.`in`)
+    buffer = reader.nextInt()
+    item[i] = buffer
+    println(item[i])
+}
+
 fun main () {
     val name: Array<String> = arrayOf("Bag", "Pencil", "Marker", "Belt", "Correction Pen")
     val price: Array<Int> = arrayOf(100, 5, 7, 50, 8)
-    var item: Array<Int> = arrayOf(0, 9)
+    var item: Array<Int> = arrayOf(0)
+    var total = 0
 
     do {
         var i = 0
@@ -25,32 +37,31 @@ fun main () {
         val choose: Int = reader.nextInt()
         when (choose){
             1 -> {
-                println("\nYou Choose " + name[0])
-                println("the Price is " + price[0] + "k")
-                print("How many items do u need : ")
-                item[i] = reader.nextInt()
+                pricing (name, price, item, choose, i)
+                total += item[i]*100
 
             }
 
             2 -> {
-                println("\nYou Choose " + name[1])
-                println("the Price is " + price[1]+ "k")
+                pricing (name, price, item, choose, i)
+                total += item[i]*5
             }
 
             3 -> {
-                println("\nYou Choose " + name[2])
-                println("the Price is " + price[2]+ "k")
+                pricing (name, price, item, choose, i)
+                total += item[i]*7
             }
 
             4 -> {
-                println("\nYou Choose " + name[3] + " Nice choice brvh")
-                println("the Price is " + price[3]+ "k")
+                pricing (name, price, item, choose, i)
+                total += item[i]*50
             }
 
             5 -> {
-                println("\nYou Choose " + name[5-1])
-                println("the Price is " + price[5-1]+ "k")
+                pricing (name, price, item, choose, i)
+                total += item[i]*8
             }
+
             else -> {
                 println("\nWrong Input moron")
             }
