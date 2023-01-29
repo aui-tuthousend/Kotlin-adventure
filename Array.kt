@@ -8,7 +8,7 @@ fun main() {
     kelas[1]=-1
 
     //val range = 1..100
-    val range = 120 downTo 1 step 2
+    val range = 120 downTo 1 step 3
 
     println(kelas[0])
     println(nama[1])
