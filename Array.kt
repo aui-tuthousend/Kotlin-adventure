@@ -1,10 +1,10 @@
 fun main() {
     val nama: Array<String> = arrayOf("Joko", "wokijo")
 
-    nama.set(1, "jowkwoi") //mengganti anggota array
+    nama.set(1, "maaar") //mengganti anggota array
 
     val kelas: Array<Int?> = arrayOfNulls( 7 )
-    kelas[0]=44
+    kelas[0]=47
     kelas[1]=7
 
     //val range = 1..100
