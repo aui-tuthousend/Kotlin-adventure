@@ -15,7 +15,7 @@ fun menu () {
 fun main () {
     val name: Array<String> = arrayOf("Bag", "Pencil", "Marker", "Belt", "Correction Pen")
     val price: Array<Int> = arrayOf(100, 5, 7, 50, 8)
-    var item: Array<Int> = arrayOf()
+    var item: Array<Int> = arrayOf(0, 9)
 
     do {
         var i = 0
