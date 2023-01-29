@@ -4,7 +4,7 @@ fun main() {
     nama.set(1, "maaar") //mengganti anggota array
 
     val kelas: Array<Int?> = arrayOfNulls( 7 )
-    kelas[0]=47
+    kelas[0]=49
     kelas[1]=-1
 
     //val range = 1..100
